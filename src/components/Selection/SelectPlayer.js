@@ -4,11 +4,11 @@ const SelectPlayer = (props) => {
     const {Name, img, salary} = props.player
     return (
         <div>
-            <div className="row shadow-lg m-2 p-2 bg-warning">
-                <div className="col-md-4">
-                    <img className="container-fluid" src={img} alt="" />
+            <div className="d-flex shadow-lg m-2 p-2 bg-warning">
+                <div className="m-0 p-0">
+                    <img height="60px" width="60px" src={img} alt="" />
                 </div>
-                <div className="col-md-8">
+                <div className="ms-3 border-start">
                     <p className="m-0"> {Name}</p>
                     <p> {salary} EUR </p>
                 </div>

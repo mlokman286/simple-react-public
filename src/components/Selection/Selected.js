@@ -8,14 +8,14 @@ const Selected = (props) => {
     return (
         <div className="sticky-top">
             <div>
-                <h2 className='text-center'>Team Summery</h2>
+                <h2 className='text-center bg-dark text-white p-2'>Team Summery</h2>
                 <hr/>
-                <div>
+                <div className='fw-bolder'>
                     <p>Total Selected: {count.length}</p>
                     <p>Total Budget: {budget} EUR</p>
                 </div>
                 <div>
-                    <h4 className='text-center'>Select Players</h4>
+                    <h4 className='text-center'>Selected Players</h4>
                     <div>
                         {count.map((player => <SelectPlayer player={player}></SelectPlayer>))}
                     </div>
